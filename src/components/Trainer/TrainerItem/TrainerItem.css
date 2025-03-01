@@ -1,0 +1,31 @@
+.trainer-item {
+    flex-grow: 1;
+    text-align: center;
+    border: 1px solid #4444;
+    padding: 30px 25px;
+    transition: 0.4s;
+}
+
+.trainer-item > img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: #efefef;
+    transition: 0.4s;
+}
+
+.trainer-item > h3 {
+    color: #f3b01b;
+}
+ 
+.trainer-item > p:last-child {
+    font-weight: 900;
+}
+
+.trainer-item:hover {
+    transform: translateY(-15px);
+}
+
+.trainer-item:hover > img {
+    background-color: #fff;
+}

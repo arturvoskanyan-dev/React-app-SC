@@ -1,0 +1,30 @@
+.features-info-item {
+    max-width: 534px;
+    padding: 12px;
+    box-shadow: 2px 2px 18px rgb(0 0 0 / 20%);
+    border-radius: 27px;
+    line-height: 26px;
+}
+
+.features-img > img {
+    width: 450px;
+    height: 430px;
+}
+
+.features-info-item > p {
+    font-size: 18px;
+}
+
+.features-info-item > p > span {
+    font-weight: 900;
+}
+
+.features-info-item > p:nth-child(2) {
+    border-top: 1px solid rgb(148, 147, 147);
+}
+
+@media screen and (max-width: 1024px) {
+    .features-info-item {
+        max-width: 100%;
+    }
+}

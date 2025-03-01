@@ -1,0 +1,14 @@
+.main-image {
+    width: 500px;
+} 
+
+.main-image > img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .main-image {
+        margin: 0 auto;
+        width: 70%;
+    }
+}

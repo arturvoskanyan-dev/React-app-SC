@@ -1,0 +1,46 @@
+.trainer {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.trainer-title {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.trainer-title > h2 {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.trainer-title > h2 > span {
+    font-weight: 900;
+}
+
+.trainer-title > p {
+    max-width: 600px;
+    height: 68px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.trainer-title > p::after {
+    content: "";
+    width: 10%;
+    height: 2px;
+    display: block;
+    margin: 1rem auto;
+    background-color: #f3b01b;
+}
+
+.trainer-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.trainer-btn {
+    margin-top: 50px;
+    text-align: center;
+}
