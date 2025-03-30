@@ -1,4 +1,5 @@
 const arr = ["Դասընթացներ", "Առավելություններ", "Թրեյներներ", "Մեր մասին"];
+// const arr = ["Դասընթացներ"];
 const infoIcons = ["facebook", "linkedin", "instagram", "tik-tok"];
 
 const lessons = [

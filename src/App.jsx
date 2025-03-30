@@ -1,21 +1,31 @@
+import {Nav, Main, Lessons, Features, Trainer, AboutUs, Footer} from "./components/index"
+import { useRef } from 'react'
 import './App.css'
-import Nav from "./components/Nav/Nav.jsx"
-import Main from './components/Main/Main.jsx'
-import Lessons from "./components/Lessons/Lessons.jsx"
-import Features from './components/Features/Features.jsx'
-import Trainer from './components/Trainer/Trainer.jsx'
-import AboutUs from './components/AboutUs/AboutUs.jsx'
-import Footer from './components/Footer/Footer.jsx'
 
 function App({nav_item, info_icon, lessons, features, trainers, contact}) {
+  const lessonsRef = useRef(null);
+  const featuresRef = useRef(null);
+  const trainersRef = useRef(null);
+  const aboutUsRef = useRef(null);
+
+  const scroll = (navName) => {
+    const refsObj = {
+      "Դասընթացներ": lessonsRef,
+      "Առավելություններ": featuresRef,
+      "Թրեյներներ": trainersRef,
+      "Մեր մասին": aboutUsRef
+    }
+    refsObj[navName]?.current?.scrollIntoView({behavior: "smooth"})
+  }
+
   return (
     <>
-      <Nav nav_item={nav_item} />
+      <Nav nav_item={nav_item} scroll={scroll} />
       <Main info_icon={info_icon} />
-      <Lessons lessons={lessons} />
-      <Features features={features} />
-      <Trainer trainers={trainers} />
-      <AboutUs />
+      <Lessons lessons={lessons} lessonsRef={lessonsRef} />
+      <Features features={features} featuresRef={featuresRef} />
+      <Trainer trainers={trainers} trainersRef={trainersRef} />
+      <AboutUs aboutUsRef={aboutUsRef} />
       <Footer info_icon={info_icon} nav_item={nav_item} contact={contact} />
     </>
   )

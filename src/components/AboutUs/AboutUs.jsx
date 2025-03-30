@@ -1,9 +1,8 @@
 import "./AboutUs.css"
 
-
-function AboutUs() {
+function AboutUs({aboutUsRef}) {
   return (
-      <div className="container">
+      <div className="container" ref={aboutUsRef}>
           <div className="about-us">
             <div className="about-us-title">
                 <h2><span>Մեր</span> մասին</h2>

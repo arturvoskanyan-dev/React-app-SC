@@ -1,9 +1,9 @@
 import LessonsBox from "./LessonsBox/LessonsBox"
 import "./Lessons.css"
 
-function Lessons({lessons}) {
+function Lessons({lessons, lessonsRef}) {
     return (
-        <div className="lessons">
+        <div className="lessons" ref={lessonsRef}>
             <div className="lessons-text">
                 <h2>Ծրագրավորման <span>դասընթացներ</span></h2>
                 <p>Ծրագրավորման դասընթացներ նախատեսված սկսնակների համար</p>

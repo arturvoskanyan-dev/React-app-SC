@@ -2,9 +2,9 @@ import NavBtn from "../NavBtn/NavBtn"
 import FeaturesItem from "./FeaturesItem/FeaturesItem"
 import "./Features.css"
 
-function Features({features}) {
+function Features({features, featuresRef}) {
   return (
-    <div className="features">
+    <div className="features" ref={featuresRef}>
         <div className="features-title">
             <h2><span>Ինչո՞ւ սովորել</span> մեզ մոտ</h2>
             <p>Մեզ մոտ ծրագրավորում սովորելը ձեռնտու է</p>

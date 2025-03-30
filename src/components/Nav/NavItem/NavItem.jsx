@@ -1,13 +1,13 @@
 import "../NavItem/NavItem.css"
 
-function NavItem({nav_item}) {
+function NavItem({nav_item, scroll}) {
     return (
         <div className="nav-items">
             {
                 nav_item.map((elem, index) => {
                     return (
                         <div className="nav-item" key={index}>
-                            <a href="">{elem}</a>
+                            <li onClick={() => scroll(elem)}>{elem}</li>
                         </div>
                     )
                 })
